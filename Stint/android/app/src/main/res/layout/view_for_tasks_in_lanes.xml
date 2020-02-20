@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="5dp"
+        app:cardElevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:id="@+id/cardTitle"
+                    android:text="Card Title"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/cardEditButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:gravity="end"
+                    android:background="@null"
+                    android:src="@drawable/outline_edit_black_18dp"
+                    android:text="Edit button"
+                    android:layout_alignParentEnd="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardDescription"
+            android:text="Card Description"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/cardEditButton"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/cardDescription"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/clock_white"
+                    android:background="@color/dueDateTimeButtonColor"/>
+                <TextView
+                    android:id="@+id/cardDueDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingVertical="5dp"
+                    android:background="@color/dueDateTimeButtonColor"
+                    android:paddingHorizontal="8dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="No Due Date"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

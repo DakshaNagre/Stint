@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.oosd.project.taskmanagementapp"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    // Dependency for card view
+    implementation 'androidx.cardview:cardview:1.0.0'
+    // Volley Pulgin
+    implementation 'com.android.volley:volley:1.1.1'
+    // GSON library to transfer java object to JSON or vice versa
+    implementation 'com.google.code.gson:gson:2.8.6'
+    // Material UI dependency
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+    // Picaso library to load images from URL onto imageView
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.core:core-ktx:1.2.0-rc01'
+    //recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    // navigation drawer
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    //material calendar
+    implementation 'com.applandeo:material-calendar-view:1.4.0'
+    //circular imageview
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+
+    def lifecycle_version = "2.1.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.android.support:design:28.0.0'
+}

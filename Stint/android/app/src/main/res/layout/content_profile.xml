@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/account_settings_layout"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:text="Account Info"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/nameImageView"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:background="@drawable/icons_name" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/nameImageView"
+                android:visibility="invisible"
+                android:id="@+id/editTextNameMaterial">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name.."
+                    android:id="@+id/editTextName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:text="Name"
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:text="developer"
+                android:layout_toRightOf="@id/nameImageView"
+                android:id="@+id/profileName"
+                style="@style/profileDetailsMiniText" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/icons_edit"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/editNameButton" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/emailImageView"
+                android:src="@drawable/icons_email"
+                style="@style/profileDetailsImage" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/emailImageView"
+                android:visibility="invisible"
+                android:id="@+id/editTextEmailMaterial">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email.."
+                    android:id="@+id/editTextEmail"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:text="Email"
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/email"/>
+
+            <TextView
+                android:text="developer@appsnipp.com"
+                android:id="@+id/profileEmail"
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsMiniText" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/icons_edit"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/editEmailButton"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/addressImageView"
+                android:src="@drawable/icons_password"
+                style="@style/profileDetailsImage" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/addressImageView"
+                android:visibility="invisible"
+                android:id="@+id/editTextPasswordMaterial">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password.."
+                    android:id="@+id/editTextPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:text="Password"
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/password"/>
+
+            <TextView
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/profilePassword"
+                android:text="asffdssasafb"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/icons_edit"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/editPasswordButton"/>
+
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/dobImageView"
+                android:src="@drawable/icons_password"
+                style="@style/profileDetailsImage" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/dobImageView"
+                android:visibility="invisible"
+                android:id="@+id/editTextConfirmPasswordMaterial">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:id="@+id/editTextConfirmPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:text="Confirm Password"
+                android:layout_toRightOf="@id/dobImageView"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/confirmPassword"/>
+
+            <TextView
+                android:inputType="textPassword"
+                android:layout_toRightOf="@id/dobImageView"
+                style="@style/profileDetailsMiniText"
+                android:text="asffdssasafb"
+
+                android:id="@+id/confirmPasswordProfile"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/icons_edit"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/editConfirmPasswordButton"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="20dp"
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/emailText"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/emailText"
+                android:id="@+id/emailToggle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push: "
+                android:textSize="20dp"
+                android:id="@+id/pushText"
+                android:layout_toEndOf="@+id/emailToggle"
+                style="@style/profileDetailsMiniText"
+                android:layout_marginLeft="60dp"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/pushText"
+                android:id="@+id/pushToggle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:background="@color/colorPrimary"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/updateButton"
+                android:layout_marginLeft="35dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="35dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/cancelButton"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

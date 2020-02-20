@@ -1,0 +1,146 @@
+.App {
+  height: 100vh;
+  display: flex;
+  background-image: url('../Image/2.jpg');
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.App__Form {
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.93);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.9);
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  height: 85vh;
+  padding-left: 40px; 
+  overflow: auto;
+  overflow: hidden;
+  clear: both;
+  flex-direction: column;
+}
+
+.PageSwitcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.PageSwitcher__Item {
+  background-color: #ebeeec ;
+  text-shadow: #f4f0ec ;
+  color: #800080;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: .9em;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.PageSwitcher__Item--Active {
+  background-color: 	#A49592;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  color: #FDF6F6;
+}
+
+.PageSwitcher__Item:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.PageSwitcher__Item:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.Main {
+  justify-content: center;
+}
+
+
+.FormTitle {
+  color: #707C8B;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.FormTitle__Link {
+  color: #707C8B;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+  margin: 0 10px;
+  padding-bottom: 5px;
+}
+
+.FormTitle__Link:first-child {
+  margin-left: 0;
+}
+
+.FormTitle__Link--Active {
+  color: white;
+  border-bottom: 1px solid #199087;
+}
+
+.FormField {
+  margin-bottom: 30px;
+}
+
+.FormField__Label {
+  display: block;
+  text-transform: uppercase;
+  font-size: .9em;
+  color:	#003B46;
+}
+
+.FormField__Label2
+{
+  display: block;
+  text-transform: uppercase;
+  font-size: 1em;
+  color:	#003B46;
+  padding-top: 5%;
+}
+
+.FormField__Input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  color:#063852;
+  font-size: 24px;
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: .8em;
+  font-weight: 700;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.FormField__Input::placeholder {
+  font-weight: 700;
+  font-size: .8em;
+  color:#5D535E;
+}
+
+.FormField__Button {
+  background-color: #A49592; 
+  color: #FDF6F6;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  /* text-shadow: #f4f0ec; */
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 50px;
+  margin-left: 30%;
+  font-size: .9em;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+}

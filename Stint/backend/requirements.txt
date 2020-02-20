@@ -1,0 +1,12 @@
+flask
+jsonpickle
+flask_cors
+pymongo
+passlib
+dnspython
+coverage
+PyJwt
+boto
+requests
+APScheduler
+pyfcm

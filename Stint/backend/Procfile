@@ -1,0 +1,2 @@
+web: uwsgi uwsgi.ini
+clock: python3 -m scheduler.py
