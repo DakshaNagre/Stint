@@ -1,1 +1,1 @@
-# Stint - A Task Management Application
+# Stint
