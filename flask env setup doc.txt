@@ -1,0 +1,34 @@
+1. Navigate to the directory where u want to create the project
+2. py -m venv env  // env is the name of the environment
+3. env\Scripts\activate
+4. pip install flask
+5. Goto the project directory and name a txt file as app.py
+6. set FLASK_APP=app.py // this will tell python where to look for when it runs
+7. flask run // to the run the app
+
+pip install -r dependencies.txt
+python -m app
+
+
+POST cmds
+localhost:5000/registerUser
+
+object
+ "name": "Daksha121",
+    "email": "daksha1@gmail.com",
+    "password": "Daksha123",
+    "confirmPassword": "Daksha123",
+    "phone": "+18128038160"
+
+{
+    "name": "Daksha121"
+}
+
+how to run unit test case
+coverage run -m tests.services.board_service_test
+
+Inside Headers
+Key: Authorization
+Value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZGM0NjY4NjAwNDE3YzA3Yzk0MDQ1YzIiLCJleHAiOjE1NzMzMjgwNjB9.oOuPZE44qHdf3M1pMr90SntVuPlNyViK51rlWjl6t7o
+
+Change the url to createBoard and do the necessary
